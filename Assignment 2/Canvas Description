@@ -1,0 +1,23 @@
+In this assignment you’ll write a program that calculates the checksum for the text in a file. Your program will take two command line parameters. The first parameter will be the name of the input file for calculating the checksum. The second parameter will be for the size of the checksum (8, 16, or 32 bits). The program must generate output to the console (terminal) screen.
+
+The assignment PDF: cis3360-pa02-25Sp.pdf (updated)Download cis3360-pa02-25Sp.pdf (updated)
+
+The ZIP: pa02rls2b.zipDownload pa02rls2b.zip
+
+Updated shell scripts for Rust language support & improved error handling.
+
+basetest.shDownload basetest.sh
+
+pa02Xtest.shDownload pa02Xtest.sh
+
+The Zoom intro:
+
+
+
+FIXED - now w. audio...
+
+Summary:
+
+You can write your PA02 solution in any of the following: C, C++, Java, Go, Python, & Rust
+
+PS As mentioned in the assignment, you should make sure your code works on Eustis and confirm that using the supplied bash files work on Eustis too.
