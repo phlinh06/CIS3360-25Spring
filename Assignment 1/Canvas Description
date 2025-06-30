@@ -1,0 +1,76 @@
+In this assignment you’ll write a program that encrypts the alphabetic letters in a file using the Hill cipher where the Hill matrix can be any size from 2x2 up to 9x9. Your program will take two command line parameters containing the names of the file storing the encryption key and the file to be encrypted. IMPORTANT NOTE ABOUT FILENAMES BELOW.
+
+The assignment: cis3360-pa01-25Sp.pdfDownload cis3360-pa01-25Sp.pdf
+
+The ZIP: pa01Testing.zipDownload pa01Testing.zip
+
+
+Suggestions/hints:
+
+Use the commandLineArguments.pdf Download commandLineArguments.pdfas a guide on how to collect file names for the plaintext & key files.
+The PDF has the source code on how to open a file in both C & Java.
+Make sure that code works on Eustis to confirm you can compile and run an executable on Eustis (Ubuntu terminal window;).
+Carefully read the assignment PDF. Many questions I've been asked in the past few days are answered in the assignment's PDF: cis3360-pa01-25Sp.pdfDownload cis3360-pa01-25Sp.pdf
+Unzip the the file above (pa01Testing.zip Download pa01Testing.zip) on your pc/laptop then move those files to your testing directory on Eustis.
+The ZIP contains:
+A BASH shell script to run pa01 (c, c++, Go, Python, Rust, or Java) as described in detail in the assignment.
+There are 5 sets of files each containing
+Plaintext input file
+Key file
+Base (or expected out) file
+Copy of your output (or Student file)
+If there is a lot of output of plaintext, key, or expected output there's an error in your code.
+Expected out put is shown below.
+/***********************************/
+
+[535] ~/pa1Hbase/basetest $ bash pa01test.sh pa01.java
+
+Compile of pa01 succeded.
+
+Case #1
+
+Case #1 - complete
+
+Case #2
+
+Case #2 - complete
+
+Case #3
+
+Case #3 - complete
+
+Case #4
+
+Case #4 - complete
+
+Case #5
+
+Case #5 - complete
+
+[536] ~/pa1Hbase/basetest $ 
+
+/***********************************/
+Reminder:
+
+When uploading your programming assignment to Webcourses, Webcourses will synthesize a name based on your first and last name. We know about that. More importantly, when you upload a revised program, Webcourses will take that synthesized named and add a count to it. For example, the first submission is FirstnameLastnamepa01.c. The second submission?  FirstnameLastnamepa01-2.c. The third submission? FirstnameLastnamepa01-3.c. And so on.
+
+We (the graders & I) know this happens and these filename changes will be ignored. BUT make sure to name the program pa01.
+
+ 
+
+/****************************UPDATE*********************/
+
+There is an updated assignment document. Nothing in the assignment has changed however a couple of things have been updated.
+First, an updated shell script for testing on Eustis is provided. 
+pa01x.shDownload pa01x.sh
+It provides a very clear failure code and also provides some additional information for testing/debugging.
+There are two sample files available that are NOT used in either of the pa01 shell scripts. They are 
+k0.txt which contains:
+2
+1 0
+0 1
+This is an identity matrix which - if multiplied correctly will result in an unchanged encrypted text compared with the plain text.
+p0.txt which contains:
+abcdefghijklmnopqrstuvwxyz0123456789
+0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+This text will enable testing for lower case conversions and alphabetic character filtering.
